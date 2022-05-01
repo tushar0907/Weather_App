@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Ubuntu:ital,wght@0,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans&family=Ubuntu:ital,wght@0,500;1,700&display=swap");
+p {
+    font-size: 1.5em;
+    font-family: "Ubuntu", sans-serif;
+}
+
+h1 {
+    font-size: 4em;
+}
+
+.container {
+    display: flex;
+    margin-top: 10px;
+    height: 90vh;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.app .search {
+    text-align: center;
+    padding: 1rem;
+    position: absolute;
+}
+
+.app input {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.7rem 1.5rem;
+    font-size: 1.5rem;
+    border-radius: 0px;
+    color: white;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+::placeholder {
+    color: #fbfafa;
+    font-family: "Noto Sans", sans-serif;
+}
+
+.part {
+    display: flex;
+    flex: 1;
+}
+
+.part img {
+    display: block;
+    width: 100%;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+}
+
+.portion {
+    display: flex;
+    flex: 2;
+    background: url("https://pics.freeartbackgrounds.com/fullhd/Seascape_after_Sunset_Background-990.jpg") no-repeat center/cover;
+}
+
+.title {
+    display: block;
+    color: white;
+    position: absolute;
+    margin-top: 33vh;
+    margin-left: 25px;
+}
+
+.app {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: rgba(46, 20, 159, 0.4);
+    color: rgb(251, 251, 251);
+}
+
+.app .bottom {
+    margin-right: 30px;
+    margin-top: 40vh;
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    border-radius: 20px;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    width: 33%;
+    height: 25%;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.app .top {
+    display: flex;
+    font-size: 12px;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(1, 1, 1, 0.7);
+    border-radius: 20px;
+    height: 13%;
+    width: 60%;
+    margin-top: 75vh;
+    margin-left: 17vh;
+}
+
+.description {
+    display: block;
+    font-size: 10px;
+    font-family: "Noto Sans", sans-serif;
+}
+
+@media only screen and (min-width: 290px) and (max-width: 1023px) {
+    .part {
+        display: flex;
+        height: 60%;
+    }
+    .portion {
+        display: flex;
+        height: 80%;
+    }
+    .app .top {
+        display: flex;
+        font-size: 12px;
+        justify-content: space-around;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 20px;
+        margin-bottom: 20px;
+        font-size: 9px;
+        margin-top: 50vh;
+        margin-left: auto;
+        margin-right: auto;
+        height: 80px;
+        width: 60%;
+    }
+    .container {
+        display: flex;
+        margin-top: 10px;
+        height: 100vh;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .app .search {
+        text-align: center;
+        padding: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .app .bottom {
+        display: flex;
+        flex: 0.3;
+        margin-left: 30px;
+        margin-right: auto;
+        margin-bottom: 0px;
+        margin-top: 15px;
+        flex-direction: row;
+        font-size: 12px;
+        border-radius: 20px;
+        justify-content: space-around;
+        align-items: center;
+        width: 80%;
+        height: 20%;
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+    .app input {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0.7rem 1.5rem;
+        font-size: 1.5rem;
+        border-radius: 25px;
+        border: none;
+        background: transparent;
+        border-bottom: 5px solid black;
+    }
+     ::placeholder {
+        color: #ffffff;
+    }
+    .app {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.4);
+        color: #fff;
+    }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 370px) {
+    .app input {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0.7rem 1.5rem;
+        font-size: 1.5rem;
+        border-radius: 25px;
+        width: 200px;
+        border: none;
+        background: transparent;
+        border-bottom: 5px solid black;
+    }
+}
